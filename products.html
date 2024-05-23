@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجاتنا</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        
+        header,
+        main,
+        footer {
+            padding: 2em;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+        }
+        
+        .product {
+            border: 1px solid #ddd;
+            margin: 1em;
+            padding: 1em;
+            display: inline-block;
+            width: calc(33% - 4em);
+            box-sizing: border-box;
+            vertical-align: top;
+        }
+        
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .product h3 {
+            margin: 0.5em 0;
+        }
+        
+        .product p {
+            margin: 0.5em 0;
+        }
+        
+        .product form {
+            margin-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="products.html">المنتجات</a>
+        <a href="contacts.html">الاتصال</a>
+        <a href="view_orders.php">الطلبات</a>
+    </nav>
+
+    <header>
+        <h1>منتجاتنا</h1>
+        <p>اكتشف أفضل المنتجات المتاحة لدينا.</p>
+    </header>
+
+    <main>
+        <div class="product">
+            <img src="C:\xampp\htdocs\myshop\imj\تنزيل (6).jfif" alt="المنتج 1">
+            <h3>المنتج 1</h3>
+            <p>وصف المنتج 1.</p>
+            <p>السعر: $100</p>
+            <form action="submit_order.php" method="post">
+                <input type="hidden" name="product" value="المنتج 1">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">طلب</button>
+            </form>
+        </div>
+        <div class="product">
+            <img src="C:\xampp\htdocs\myshop\imj\تنزيل (12).jfif" alt="المنتج 1">
+            <h3>المنتج 2</h3>
+            <p>وصف المنتج 2.</p>
+            <p>السعر: $100</p>
+            <form action="submit_order.php" method="post">
+                <input type="hidden" name="product" value="المنتج 1">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">طلب</button>
+            </form>
+        </div>
+        <div class="product">
+            <img src="C:\xampp\htdocs\myshop\imj\تنزيل (11).jfif" alt="المنتج 1">
+            <h3>المنتج 3</h3>
+            <p>وصف المنتج 3.</p>
+            <p>السعر: $100</p>
+            <form action="submit_order.php" method="post">
+                <input type="hidden" name="product" value="المنتج 1">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">طلب</button>
+            </form>
+        </div>
+        <div class="product">
+            <img src="C:\xampp\htdocs\myshop\imj\تنزيل (14).jfif" alt="المنتج 1">
+            <h3>المنتج 4</h3>
+            <p>وصف المنتج 4.</p>
+            <p>السعر: $100</p>
+            <form action="submit_order.php" method="post">
+                <input type="hidden" name="product" value="المنتج 1">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">طلب</button>
+            </form>
+        </div>
+        <div class="product">
+            <img src="C:\xampp\htdocs\myshop\imj\تنزيل (13).jfif" alt="المنتج 1">
+            <h3>المنتج 5</h3>
+            <p>وصف المنتج 5.</p>
+            <p>السعر: $100</p>
+            <form action="submit_order.php" method="post">
+                <input type="hidden" name="product" value="المنتج 1">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">طلب</button>
+            </form>
+        </div>
+        <div class="product">
+            <img src="C:\xampp\htdocs\myshop\imj\تنزيل (15).jfif" alt="المنتج 1">
+            <h3>المنتج 6</h3>
+            <p>وصف المنتج 6.</p>
+            <p>السعر: $100</p>
+            <form action="submit_order.php" method="post">
+                <input type="hidden" name="product" value="المنتج 1">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">طلب</button>
+            </form>
+        </div>
+        <div class="product">
+            <img src="C:\xampp\htdocs\myshop\imj\تنزيل (15).jfif" alt="المنتج 1">
+            <h3>المنتج 7</h3>
+            <p>وصف المنتج 7.</p>
+            <p>السعر: $100</p>
+            <form action="submit_order.php" method="post">
+                <input type="hidden" name="product" value="المنتج 1">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                <button type="submit">طلب</button>
+            </form>
+        </div>
+        <!-- أضف المزيد من المنتجات هنا مع نماذج الطلب -->
+    </main>
+
+    <footer>
+        <p>حقوق الطبع والنشر &copy; 2024 متجر المنتجات. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+
+</html>
