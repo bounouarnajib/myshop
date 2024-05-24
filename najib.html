@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة الطلب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>صفحة الطلب</h1>
+        <form>
+            <label for="name">الاسم الكامل</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="product">المنتج</label>
+            <select id="product" name="product" required>
+            <option value="product1">منتج 1</option>
+            
+            <option value="product2">منتج 1</option>
+            <option value="product3">منتج 2</option>
+            <option value="product2">منتج 3</option>
+            <option value="product3">منتج 4</option>
+            <option value="product2">منتج 5</option>
+            
+        </select>
+
+            <label for="quantity">الكمية</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">العنوان</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit">إرسال الطلب</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
